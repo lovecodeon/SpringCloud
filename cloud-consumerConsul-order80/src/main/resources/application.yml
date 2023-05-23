@@ -1,0 +1,50 @@
+server:
+  port: 80
+spring:
+  cloud:
+    consul:
+      discovery:
+        heartbeat:
+          enabled: true
+        service-name: ${spring.application.name}
+        prefer-ip-address: true
+      host: 43.138.40.184
+      port: 8500
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC
+    #    url: jdbc:p6spy:mysql://localhost:3306/ks?serverTimezone=UTC
+    username: root
+    password: root
+  application:
+    name: cloud-consumer-order
+  redis:
+    host: 43.138.40.184
+    port: 6379
+    database: 0
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.syj.springcloud.pojo
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.syj.springcloud.pojo
+  configuration:
+    properties:
+      timezone: GMT+8
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com:
+      baomidou:
+        mybatisplus:
+          mapper: debug
+          executor: debug
+#eureka:
+#  client:
+#    register-with-eureka: true #false表示服务中心不注册自己
+#    fetch-registry: true #false表示自己就是注册中心,不需要去检索服务
+#    service-url:
+#      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka

@@ -1,0 +1,21 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:lovecodeon/Config.git
+          search-paths:
+            - Config
+          default-label: master
+    consul:
+      discovery:
+        heartbeat:
+          enabled: true
+        service-name: ${spring.application.name}
+        prefer-ip-address: true
+      host: 43.138.40.184
+      port: 8500

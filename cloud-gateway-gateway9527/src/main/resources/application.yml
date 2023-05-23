@@ -1,0 +1,28 @@
+server:
+  port: 9527
+spring:
+
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能，利用微服务创建路由
+      routes:
+        - id: payment_router
+          uri: lb://cloud-provider-hystrix-payment
+          predicates:
+            - Path=/payment/get/**
+
+        - id: payment_router2
+          uri: lb://cloud-provider-hystrix-payment
+          predicates:
+            - Path=/payment/discoveryClient/**
+    consul:
+      host: 43.138.40.184
+      port: 8500
+      discovery:
+        heartbeat:
+          enabled: true
+        service-name: ${spring.application.name}
