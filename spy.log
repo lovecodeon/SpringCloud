@@ -1,0 +1,16 @@
+1684394342326|36|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/siyun?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684394443086|37|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/siyun?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684394593604|49|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/siyun?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684396961799|43|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/siyun?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684397083949|51|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684397090371|42|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684397161677|37|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|SELECT id,serial FROM payment WHERE id=? |SELECT id,serial FROM payment WHERE id=31 
+1684397308637|37|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|SELECT id,serial FROM payment WHERE id=? |SELECT id,serial FROM payment WHERE id=31 
+1684397391448|45|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684397394954|58|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684397411005|29|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|SELECT id,serial FROM payment WHERE id=? |SELECT id,serial FROM payment WHERE id=31 
+1684397535530|36|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684397537467|34|statement|connection 10|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|SELECT id,serial FROM payment WHERE id=? |SELECT id,serial FROM payment WHERE id=31 
+1684397740303|37|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684462376985|64|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
+1684462442753|63|statement|connection 0|url jdbc:p6spy:mysql://43.138.40.184:5508/springcloud?serverTimezone=UTC|/* ping */ SELECT 1|/* ping */ SELECT 1
